@@ -100,7 +100,7 @@ public class CommentHandling {
         				 getElementsByClass("yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix");
         		 for(int i=0;i<ele2.size();i++) {
         			System.out.println(ele2.get(i).attr("data-context-item-id"));
-        			BufferedWriter out_com = new BufferedWriter(new FileWriter("out"+i+".txt"));
+        			BufferedWriter out_com = new BufferedWriter(new FileWriter(keyword+"_out"+i+".txt"));
         		       
         			String videoId = ele2.get(i).attr("data-context-item-id");
         			 String text = getText();
